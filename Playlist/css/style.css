@@ -1,0 +1,162 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Century Gothic', sans-serif;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+	font-weight: 400;
+	color: #666666;
+}
+
+.image-1 {
+	background-image: url('../img/image1.jpeg');
+	min-height: 100vh;
+}
+.image-2 {
+	background-image: url('../img/thumbnail1.jpg');
+	min-height: 400px;
+}
+
+.image-3 {
+	background-image: url('../img/thumbnail2.jpg');
+	min-height: 400px;
+}
+
+.image-4 {
+	background-image: url('../img/thumbnail3.jpg');
+	min-height: 400px;
+}
+
+.footer-image {
+	background-image: url('../img/image1.jpeg');
+	min-height: 400px;
+}
+
+.image-1, .image-2, .image-3, .image-4, .footer-image{
+	position: relative;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.container {
+	width: 80%; 
+	margin: 0 auto; 
+	overflow: hidden;
+}
+
+.image-1, .image-2, .image-3, .image-4, .footer-image {
+	display: grid; 
+	place-items: center;
+}
+
+.text-1, .text-2, .text-3, .text-4, .footer-text{
+	padding: 2rem; 
+	border: 1px solid white;
+	background-color: #4B0082;
+	width: 70%;
+	text-align: center; 
+	line-height: 5rem;
+}
+
+.text-1 h1, .text-2 h1, .text-3 h1, .text-4 h1, .footer-text h1 {
+	font-size: 5rem;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1rem;
+
+}
+
+.section-about {
+	padding: 3rem;  
+	text-align: center; 
+}
+
+.section-about h2{
+	font-size: 3rem;  
+	margin-bottom: 1.5rem;
+	margin-top: .6rem;
+	text-transform: uppercase;
+}
+
+.section-about p{
+	font-size: 1.4rem;  
+	line-height: 2rem;
+	
+}
+
+.section2 h2, .section3 h2, .section4 h2 {
+	text-align: center;
+	padding: 2rem;
+	font-size: 3rem;
+}
+
+.section-about, .section3 {
+	background-color: #f4f4f4;
+	color: #666666;
+}
+
+.section2, .section4 {
+	background-color: #282e34;
+	color: #dddddd;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 3fr 3fr;
+	grid-gap: 3rem;
+	padding-top: 2rem;
+	padding-left: 2rem;
+	padding-bottom: 1rem;
+	padding-right: 2rem;
+	margin-bottom: 2rem;
+}
+
+.ingredients , .recipe {
+	background-color: #000080;
+	color: #F5FFFA;
+	padding: 3rem;
+	border: #F5FFFA 1px solid;
+}
+
+.ingredients h4, .recipe h4 {
+	font-size: 3rem;
+	padding-bottom: 1rem;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1rem;
+	line-height: 3rem;
+} 
+.ingredient {
+	display: grid;
+	align-self: end;
+}
+
+
+a {
+	color: #F5FFFA;
+	text-decoration: none;
+}
+
+a:hover {
+	color: indigo;
+}
+
+
+@media (max-width:1000px) {
+	.image-1, .image-2, .image-3, .image-4, .footer-image {
+		background-attachment: scroll;
+	}
+	
+	.wrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.ingredients h4 {
+		text-align: center;
+	}
